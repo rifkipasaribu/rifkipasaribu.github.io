@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rifki Pasaribu</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="min.css">
+
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jquery.fancybox.min.css" media="screen">
+    <script src="jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="scrolloverflow.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    </head><body onmousedown="return false;" onkeydown="return false;" oncontextmenu="return false;" bgcolor="black"><table height="100%" width="100%">
+
+    <style>
+
+        .thumbnail {
+            display: block;
+            padding: 4px;
+            margin-bottom: 20px;
+            line-height: 1.428571;
+            background-color: transparent; 
+            border: 0; 
+            border-radius: 4px;
+            -webkit-transition: border .2s ease-in-out;
+            -o-transition: border .2s ease-in-out;
+            transition: border .2s ease-in-out;
+            width: 90%
+        }
+        .ornament1 {
+            position: absolute;
+            background: url() no-repeat;
+            top: 20px;
+            left: 20px;
+            width: 330px;
+            height: 330px;
+        }
+
+        .ornament2 {
+            position: absolute;
+            background: url() no-repeat;
+            bottom: 20px;
+            right: 20px;
+            width: 330px;
+            height: 330px;
+        }
+
+        .ornament3 {
+            position: absolute;
+            background: url() no-repeat;
+            bottom: 0px;
+            left: 0px;
+            width: 330px;
+            height: 330px;
+        }
+
+        .ornament4 {
+            position: absolute;
+            background: url() no-repeat;
+            top: 0px;
+            right: 0px;
+            width: 330px;
+            height: 330px;
+        }
+
+        .ornament {
+            position: absolute;
+            background: url(zig.png) no-repeat;
+            top: 150px;
+            right: 115px;
+            width: 220px;
+            height: 20px;
+        }
+
+        .ornament-zig-L2 {
+            position: absolute;
+            background: url(zig.png) no-repeat;
+            bottom: 110px;
+            left: 145px;
+            width: 220px;
+            height: 20px;
+        }
+
+        .ornament-zig-S1 {
+            position: absolute;
+            background: url(zig.png) no-repeat;
+            top: 60px;
+            right: 360px;
+            width: 135px;
+            height: 20px;
+        }
+
+        .ornament-zig-S2 {
+            position: absolute;
+            background: url(zig.png) no-repeat;
+            bottom: 60px;
+            left: 370px;
+            width: 135px;
+            height: 20px;
+
+        }
+
+        .ornament-plus-L {
+            position: absolute;
+            background: url(ll.png) no-repeat;
+            top: 225px;
+            right: 50px;
+            width: 45px;
+            height: 41px;
+        }
+
+        .ornament-plus-M1 {
+            position: absolute;
+            background: url(ll.png) no-repeat;
+            top: 310px;
+            right: 230px;
+            width: 25px;
+            height: 25px;
+        }
+
+        .ornament-plus-M2 {
+            position: absolute;
+            background: url(ll.png) no-repeat;
+            bottom: 185px;
+            left: 240px;
+            width: 25px;
+            height: 25px;
+        }
+
+        .ornament-plus-S1 {
+            position: absolute;
+            background: url(ll.png) no-repeat;
+            top: 40px;
+            right: 40px;
+            width: 15px;
+            height: 15px;
+        }
+
+        .ornament-plus-S2 {
+            position: absolute;
+            background: url(ll.png) no-repeat;
+            bottom: 190px;
+            right: 240px;
+            width: 15px;
+            height: 15px;
+        }
+
+        .ornament-plus-S3 {
+            position: absolute;
+            background: url(ll.png) no-repeat;
+            bottom: 45px;
+            right: 550px;
+            width: 15px;
+            height: 15px;
+        }
+
+        .ornament-plus-S4 {
+            position: absolute;
+            background: url(ll.png) no-repeat;
+            bottom: 30px;
+            left: 30px;
+            width: 15px;
+            height: 15px;
+        }
+
+        .ornament-plus-S5 {
+            position: absolute;
+            background: url(ll-S.png) no-repeat;
+            top: 165px;
+            left: 240px;
+            width: 15px;
+            height: 15px;
+        }
+
+        .ornament-plus-S6 {
+            position: absolute;
+            background: url(ll-S.png) no-repeat;
+            top: 30px;
+            left: 530px;
+            width: 15px;
+            height: 15px;
+        }
+
+        .rotateIn {
+            -webkit-animation: rotateIn 1.7s; /* Safari 4+ */
+            -moz-animation:    rotateIn 1.7s; /* Fx 5+ */
+            -o-animation:      rotateIn 1.7s; /* Opera 12+ */
+            animation:         rotateIn 1.7s; /* IE 10+, Fx 29+ */
+        }
+
+    </style>
+
+</head>
+<body style="margin:0">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+</script>
+
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div class="nav">
+                <div class="left">
+                    <div id="socmed">
+                        <div class="facebook" style="margin-right: 15px;">
+                            <div class="fb-like" data-href="https://www.facebook.com/IMPICBLE" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false"></div>
+                        </div>
+                        <div class="twitter" style="margin-right: 15px;">
+                            <a href="" class="" data-url="http://jkt48.com/fanclub"></a>
+                            <script>
+                                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                            </script>
+                        </div>
+                        <div class="gplus">
+                            <!-- Place this tag where you want the +1 button to render. -->
+                            <div class="g-plusone" data-size="medium" data-href="mailto:satpamtertawa@gmail.com"></div>
+
+                            <!-- Place this tag after the last +1 button tag. -->
+                            <script type="text/javascript">
+                              (function() {
+                                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                po.src = 'https://apis.google.com/js/plusone.js';
+                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                              })();
+                            </script>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li class="last"><a class="lang" href="/fanclub?lang=id" style="color: white; font-style: normal;"><img src="id.png" alt=""/> indonesian</a></li>
+                        <li><a class="lang" href="/fanclub?lang=jp" style="color: white; font-style: normal;"><img src="jp.png" alt="" /> japanese</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <center>
+                <h1 style="font-family: avenirbold; font-size: 50px; color: #f06c99">Hello World!</h1>
+                <h1 style="font-family: avenirbold; font-size: 50px; color: #f06c99">I'm RIFKI PASARIBU</h1>
+            </center>
+
+            <div class="ornament1 "></div>
+            <div class="ornament2"></div>
+            <div class="ornament3"></div>
+            <div class="ornament4"></div>
+            <div class="ornament-zig-L1 animated"></div>
+            <div class="ornament-zig-L2 animated"></div>
+            <div class="ornament-zig-S1 animated"></div>
+            <div class="ornament-zig-S2 animated"></div>
+            <div class="ornament-plus-L animated"></div>
+            <div class="ornament-plus-M1 animated"></div>
+            <div class="ornament-plus-M2 animated"></div>
+            <div class="ornament-plus-S1 animated"></div>
+            <div class="ornament-plus-S2 animated"></div>
+            <div class="ornament-plus-S3 animated"></div>
+            <div class="ornament-plus-S4 animated"></div>
+            <div class="ornament-plus-S5 animated"></div>
+            <div class="ornament-plus-S6 animated"></div>
+        </div>
+
+
+
+
+            <div class="ornament1"></div>
+            <div class="ornament2"></div>
+            <div class="ornament3"></div>
+            <div class="ornament4"></div>
+            <div class="ornament-zig-L1 animated"></div>
+            <div class="ornament-zig-L2 animated"></div>
+            <div class="ornament-zig-S1 animated"></div>
+            <div class="ornament-zig-S2 animated"></div>
+            <div class="ornament-plus-L animated"></div>
+            <div class="ornament-plus-M1 animated"></div>
+            <div class="ornament-plus-M2 animated"></div>
+            <div class="ornament-plus-S1 animated"></div>
+            <div class="ornament-plus-S2 animated"></div>
+            <div class="ornament-plus-S3 animated"></div>
+            <div class="ornament-plus-S4 animated"></div>
+            <div class="ornament-plus-S5 animated"></div>
+            <div class="ornament-plus-S6 animated"></div>
+        </div>
+
+
+            
+            <div class="ornament1"></div>
+            <div class="ornament2"></div>
+            <div class="ornament3"></div>
+            <div class="ornament4"></div>
+            <div class="ornament-zig-L1 animated"></div>
+            <div class="ornament-zig-L2 animated"></div>
+            <div class="ornament-zig-S1 animated"></div>
+            <div class="ornament-zig-S2 animated"></div>
+            <div class="ornament-plus-L animated"></div>
+            <div class="ornament-plus-M1 animated"></div>
+            <div class="ornament-plus-M2 animated"></div>
+            <div class="ornament-plus-S1 animated"></div>
+            <div class="ornament-plus-S2 animated"></div>
+            <div class="ornament-plus-S3 animated"></div>
+            <div class="ornament-plus-S4 animated"></div>
+            <div class="ornament-plus-S5 animated"></div>
+            <div class="ornament-plus-S6 animated"></div>
+        </div>
+        <div id="splash">
+        <div class="anim">
+            <div id="loader">
+                <svg version="1.1" width="60px" height="70px" viewBox="0 0 60 70">
+                    <defs>
+                        <filter id="f1" x="0" y="0">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+                        </filter>
+                    </defs>
+                    <g id="airplane">
+                        <path fill="#000" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+          h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+          c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+          c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+          c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+          C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(44,0) rotate(90 0 0)" />
+                    </g>
+                    <g id="shadow" transform="scale(.9)">
+                        <path fill="#000" fill-opacity="0.3" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+          h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+          c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+          c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+          c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+          C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(64,30) rotate(90 0 0)" filter="url(#f1)" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#80deea', '#80deea', '#80deea'],
+                css3: true,
+
+                'afterLoad': function(anchorLink, index){
+                        $('.ornament-zig-L1').addClass('active rotateIn');
+                        $('.ornament-zig-L2').addClass('active rotateIn');
+                        $('.ornament-zig-S1').addClass('active rotateIn');
+                        $('.ornament-zig-S2').addClass('active rotateIn');
+                        $('.ornament-plus-L').addClass('active rotateIn');
+                        $('.ornament-plus-M1').addClass('active rotateIn');
+                        $('.ornament-plus-M2').addClass('active rotateIn');
+                        $('.ornament-plus-S1').addClass('active rotateIn');
+                        $('.ornament-plus-S2').addClass('active rotateIn');
+                        $('.ornament-plus-S3').addClass('active rotateIn');
+                        $('.ornament-plus-S4').addClass('active rotateIn');
+                        $('.ornament-plus-S5').addClass('active rotateIn');
+                        $('.ornament-plus-S6').addClass('active rotateIn');
+                },
+
+                'onLeave': function(index, nextIndex, direction){
+                        $('.ornament-zig-L1').removeClass('active rotateIn');
+                        $('.ornament-zig-L2').removeClass('active rotateIn');
+                        $('.ornament-zig-S1').removeClass('active rotateIn');
+                        $('.ornament-zig-S2').removeClass('active rotateIn');
+                        $('.ornament-plus-L').removeClass('active rotateIn');
+                        $('.ornament-plus-M1').removeClass('active rotateIn');
+                        $('.ornament-plus-M2').removeClass('active rotateIn');
+                        $('.ornament-plus-S1').removeClass('active rotateIn');
+                        $('.ornament-plus-S2').removeClass('active rotateIn');
+                        $('.ornament-plus-S3').removeClass('active rotateIn');
+                        $('.ornament-plus-S4').removeClass('active rotateIn');
+                        $('.ornament-plus-S5').removeClass('active rotateIn');
+                        $('.ornament-plus-S6').removeClass('active rotateIn');
+                }
+            });
+            //FANCYBOX
+    //https://github.com/fancyapps/fancyBox
+    $(".fancybox").fancybox({
+        'transitionIn'  :   'elastic',
+        'transitionOut' :   'elastic',
+        'speedIn'       :   600, 
+        'speedOut'      :   200, 
+        openEffect: "elastic",
+        closeEffect: "elastic"
+    });
+        });
+    </script>
+
+
+
+</body>
+</html>
